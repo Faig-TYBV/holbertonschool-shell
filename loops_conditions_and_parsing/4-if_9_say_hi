@@ -2,9 +2,9 @@
 # This script is displaying "Best School" 10 times
 count=1
 while ((count<10)); do
+	printf "Best School"
 	if((count==9)); then
 		printf "Hi\n"
 	fi
-	printf "Best School\n"
 	((count++));
 done
