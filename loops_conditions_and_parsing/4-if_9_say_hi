@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 count=1
-while ((count<10)); do
+while ((count<=10)); do
 	printf "Best School\n"
 	if((count==9)); then
 		printf "Hi\n"
