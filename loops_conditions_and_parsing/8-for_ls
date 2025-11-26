@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # listing files in the current directory
-ls | tr " " "\n"
+for line in *; do
+	printf "%s\n" "${line#*-}";
+done
