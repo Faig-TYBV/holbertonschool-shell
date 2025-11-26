@@ -1,4 +1,4 @@
-#!//usr/bin/env bash
+#!/usr/bin/env bash
 # This script is displaying "Best School" 20 times with some exceptions
 count=1
 while ((count<=20)); do
