@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+count=1
+while ((count<=10));do
+	if((count==4)); then
+		printf "bad luck\n"
+	fi
+	if((count==8)); then
+		printf "good luck\n"
+	fi
+        if((count!=4 && count!=8)); then	
+		printf "Best School\n"
+	fi
+	((count++));
+done
