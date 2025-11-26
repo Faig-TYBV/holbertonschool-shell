@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # read and cut
-while IFS=: read -r username password uid gid fullname home shell; do
+cut -d: -f1,3,6 /etc/passwd | while IFS=: read -r username uid home; do
 	printf "%s:%s:%s\n" "$username" "$uid" "$home";
-done < /etc/passwd
+done 
