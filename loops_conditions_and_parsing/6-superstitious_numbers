@@ -1,0 +1,16 @@
+#!//usr/bin/env bash
+# This script is displaying "Best School" 20 times with some exceptions
+count=1
+while ((count<=20)); do
+	case "$count" in
+	4)
+	printf "$count\nbad luck from China\n" ;;
+	9)
+	printf "$count\nbad luck from Japan\n" ;;
+	17)
+	printf "$count\nbad luck from Italy\n" ;;
+	*)
+	printf "$count\n"
+	esac
+	((count++));
+done
