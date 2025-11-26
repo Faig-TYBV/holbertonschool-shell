@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # clock
 hours=0
-while ((hour<12)); do
+while ((hour<=12)); do
 	minute=1
 	printf "Hour: %s\n" "$hour"
 	while ((minute<60)); do
