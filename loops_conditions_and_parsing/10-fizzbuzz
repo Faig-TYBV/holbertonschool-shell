@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# printing numbers from 1 to 100
+for i in {1..100}; do
+    if (( i % 3 == 0 && i % 5 == 0 )); then
+        printf "FizzBuzz\n"
+    elif (( i % 3 == 0 )); then
+        printf "Fizz\n"
+    elif (( i % 5 == 0 )); then
+        printf "Buzz\n"
+    else
+        printf "%s\n" "$i"
+    fi
+done
+
