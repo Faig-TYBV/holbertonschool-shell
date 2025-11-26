@@ -3,14 +3,18 @@
 count=1
 while ((count<=20)); do
 	case "$count" in
-	4)
-	printf "$count\nbad luck from China\n" ;;
-	9)
-	printf "$count\nbad luck from Japan\n" ;;
-	17)
-	printf "$count\nbad luck from Italy\n" ;;
-	*)
-	printf "$count\n"
+		4)
+            printf "%s\nbad luck from China\n" "$count"
+            ;;
+       		 9)
+            printf "%s\nbad luck from Japan\n" "$count"
+            ;;
+    		17)
+	    printf "%s\nbad luck from Italy\n" "$count"	
+	    ;;	 
+	    *)
+            printf "%s\n" "$count"
+            ;;
 	esac
 	((count++));
 done
