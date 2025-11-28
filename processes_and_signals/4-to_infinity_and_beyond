@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #sleeping 2 seconds
-while ((true)); do
+while true; do
  	printf "To infinity and beyond\n"
 	sleep 2;
 done
