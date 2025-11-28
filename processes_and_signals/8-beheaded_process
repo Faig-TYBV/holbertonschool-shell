@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#killing highlander 
+pkill -9 7-highlander
+echo "Killed"
