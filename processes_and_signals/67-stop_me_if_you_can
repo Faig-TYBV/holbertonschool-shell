@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#67 stop me if you can
+pkill 7-highlander
